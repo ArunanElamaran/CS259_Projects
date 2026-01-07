@@ -1,0 +1,28 @@
+==2702537== NVPROF is profiling process 2702537, command: ./conv1
+==2702537== Some kernel(s) will be replayed on device 0 in order to collect all events/metrics.
+initializing arrays
+starting computation
+elapsed (sec): 0.285758
+simple CUDA version complete!
+Kernel Success!
+==2702537== Profiling application: ./conv1
+==2702537== Profiling result:
+==2702537== Metric result:
+Invocations                               Metric Name                            Metric Description         Min         Max         Avg
+Device "NVIDIA TITAN V (0)"
+    Kernel: convolution_layer(float*, float*, float*)
+          1                             flop_count_sp   Floating Point Operations(Single Precision)       14308       14308       14308
+          1                              inst_integer                          Integer Instructions       64280       64280       64280
+          1                             sm_efficiency                       Multiprocessor Activity       0.41%       0.41%       0.41%
+          1                        achieved_occupancy                            Achieved Occupancy    0.487371    0.487371    0.487371
+          1                      dram_read_throughput                 Device Memory Read Throughput  0.00000B/s  0.00000B/s  0.00000B/s
+          1                     dram_write_throughput                Device Memory Write Throughput  11.154MB/s  11.154MB/s  11.154MB/s
+          1                          dram_utilization                     Device Memory Utilization     Low (1)     Low (1)     Low (1)
+          1                            gld_efficiency                 Global Memory Load Efficiency      29.39%      29.39%      29.39%
+          1                          stall_inst_fetch      Issue Stall Reasons (Instructions Fetch)      15.41%      15.41%      15.41%
+          1                   stall_memory_dependency            Issue Stall Reasons (Data Request)       6.94%       6.94%       6.94%
+          1                     stall_memory_throttle         Issue Stall Reasons (Memory Throttle)       3.12%       3.12%       3.12%
+          1                        stall_not_selected            Issue Stall Reasons (Not Selected)       6.60%       6.60%       6.60%
+          1                               stall_other                   Issue Stall Reasons (Other)       0.48%       0.48%       0.48%
+          1                           stall_pipe_busy               Issue Stall Reasons (Pipe Busy)       6.58%       6.58%       6.58%
+          1                                stall_sync         Issue Stall Reasons (Synchronization)      39.85%      39.85%      39.85%
